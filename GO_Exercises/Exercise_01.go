@@ -7,6 +7,8 @@ import "fmt"
 // for only pacake means , starts with small case
 const value = "hello"
 
+//d := 10 - compile error says we dont knpw what is the d , is it type or const or what, so we have to use as var d =10
+
 func main() {
 	var a, b int = 10, 50
 	c := 40
