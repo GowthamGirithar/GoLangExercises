@@ -13,6 +13,8 @@ func main() {
 	// when we enable the data <- 30  , it will block the current go routine (main in this case) till other go routine read the data
 	// -  every send operation on channel blocks the current goroutine.
 	println("main over")
+	//if we have any read operation in main go routine, it wil check any write is there
+	// if we have any write operation in main go routine, it will check any read is there
 }
 
 func getData(data chan int) {
