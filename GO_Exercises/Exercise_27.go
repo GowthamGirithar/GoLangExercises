@@ -21,3 +21,4 @@ func unidirectionalChannel(data <-chan int) {
 	println(<-data)
 	//data <- 20   -> will throw compile time error
 }
+//in general, we will define the channel as normal one and in particular method we will receive it as read only or write only.
