@@ -24,7 +24,8 @@ func deferRealDemo() {
 	defer func() {
 		f.Close()
 		//after panic it execute the defer , so it is the best place if you want to recover
-		recover()
+		recover() // if we dont have a recover following method will not executed. in this example panicDemo() will not executed
+		//one more point is that recover will not execute this method code after panic
 
 	}()  //() is only invoking this anonymous function - function without name
 	if err != nil {
