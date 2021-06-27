@@ -13,7 +13,7 @@ func main() {
 	newArraysRows := columns
 	newArrayColm :=rows
 	// creating the new matrix is the way like here
-	a := make([][]int,newArraysRows)
+	a := make([][]int,newArraysRows) //always we define rows and then iterate the rows to allocate the columns
 	for i :=0 ;i < newArraysRows ; i++{
 		a[i]=make([]int, newArrayColm) // for each row how many columns
 	}
