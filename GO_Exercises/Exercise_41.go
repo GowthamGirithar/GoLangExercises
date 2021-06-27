@@ -11,6 +11,10 @@ func main() {
 	if isPresent {
 		println("is Present")
 	}
+	val, isPresent := m.LoadOrStore("Test", 2)
+	if isPresent {
+		println("is Present", val.(int))  // print 1
+	}
 	data, _ := m.LoadOrStore("Test2", "te")
 	fmt.Printf("%v", data)
 	m.LoadOrStore(1, "te")
