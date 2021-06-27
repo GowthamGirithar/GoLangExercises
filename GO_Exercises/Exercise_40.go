@@ -27,7 +27,7 @@ type I interface {
 
 func printType(i I) {
 	fmt.Printf("%T\n", i)
-	if s1, ok := i.(S1); ok {
+	if s1, ok := i.(S1); ok { //value.(type)
 		s1.f()
 		s1.g()
 	}
