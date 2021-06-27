@@ -19,5 +19,9 @@ func main() {
 	println("Enter the string")
 	data2,_  := reader2.ReadString(' ')   //deleimiter for the input data
 	println("The input string is ", data2)
+	
+	var input int
+	fmt.Scan(&input)
+	fmt.Print(input)
 
 }
