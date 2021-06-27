@@ -16,7 +16,7 @@ type TagExample struct{
 
 func main() {
 	dataType := reflect.TypeOf(TagExample{})  // get the tags through reflection
-	fieldTag, _ := dataType.FieldByName("name")  // get the field by name
+	fieldTag, _ := dataType.FieldByName("Name")  // get the field by name
 	println(fieldTag.Tag)
 	s, _ := fieldTag.Tag.Lookup("validation")
 	println(s)
